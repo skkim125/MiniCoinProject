@@ -13,19 +13,19 @@ struct CoinTabView: View {
     var body: some View {
         TabView(selection: $selection) {
             
-            CoinTrendingView()
+            NavigationWrapper(CoinTrendingView())
                 .tabItem {
                     Image(systemName: "chart.line.uptrend.xyaxis")
                 }
                 .tag(1)
             
-            CoinSearchView()
+            NavigationWrapper(CoinSearchView())
                 .tabItem {
                     Image(systemName: "magnifyingglass")
                 }
                 .tag(2)
             
-            CoinFavoriteView()
+            NavigationWrapper(CoinFavoriteView())
                 .tabItem {
                     Image(systemName: "star")
                 }

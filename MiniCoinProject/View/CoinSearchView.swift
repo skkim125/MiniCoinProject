@@ -8,8 +8,14 @@
 import SwiftUI
 
 struct CoinSearchView: View {
+    @State private var search = ""
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            CoinSearchRowView()
+                .searchable(text: $search, prompt: "Search Coin!")
+                .navigationTitle("Search")
+        }
     }
 }
 

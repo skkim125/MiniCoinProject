@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		041C91542C8EF68B00A1AB7C /* MiniCoinProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C91532C8EF68B00A1AB7C /* MiniCoinProjectApp.swift */; };
-		041C91562C8EF68B00A1AB7C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C91552C8EF68B00A1AB7C /* ContentView.swift */; };
 		041C91582C8EF68D00A1AB7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041C91572C8EF68D00A1AB7C /* Assets.xcassets */; };
 		041C915B2C8EF68D00A1AB7C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041C915A2C8EF68D00A1AB7C /* Preview Assets.xcassets */; };
 		041C91622C8EF75D00A1AB7C /* CoinTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C91612C8EF75D00A1AB7C /* CoinTabView.swift */; };
@@ -16,18 +15,21 @@
 		041C91672C8EF8AC00A1AB7C /* CoinSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C91662C8EF8AC00A1AB7C /* CoinSearchView.swift */; };
 		041C91692C8EF8BC00A1AB7C /* CoinFavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C91682C8EF8BC00A1AB7C /* CoinFavoriteView.swift */; };
 		041C916C2C8EFE4300A1AB7C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 041C916B2C8EFE4300A1AB7C /* Alamofire */; };
+		041C91722C8F026E00A1AB7C /* NavigationWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C91712C8F026E00A1AB7C /* NavigationWrapper.swift */; };
+		041C91742C8F0E3A00A1AB7C /* CoinSearchRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C91732C8F0E3A00A1AB7C /* CoinSearchRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		041C91502C8EF68B00A1AB7C /* MiniCoinProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniCoinProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		041C91532C8EF68B00A1AB7C /* MiniCoinProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniCoinProjectApp.swift; sourceTree = "<group>"; };
-		041C91552C8EF68B00A1AB7C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		041C91572C8EF68D00A1AB7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		041C915A2C8EF68D00A1AB7C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		041C91612C8EF75D00A1AB7C /* CoinTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinTabView.swift; sourceTree = "<group>"; };
 		041C91642C8EF8A200A1AB7C /* CoinTrendingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinTrendingView.swift; sourceTree = "<group>"; };
 		041C91662C8EF8AC00A1AB7C /* CoinSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinSearchView.swift; sourceTree = "<group>"; };
 		041C91682C8EF8BC00A1AB7C /* CoinFavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinFavoriteView.swift; sourceTree = "<group>"; };
+		041C91712C8F026E00A1AB7C /* NavigationWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationWrapper.swift; sourceTree = "<group>"; };
+		041C91732C8F0E3A00A1AB7C /* CoinSearchRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinSearchRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +64,8 @@
 			isa = PBXGroup;
 			children = (
 				041C91532C8EF68B00A1AB7C /* MiniCoinProjectApp.swift */,
+				041C91712C8F026E00A1AB7C /* NavigationWrapper.swift */,
 				041C91632C8EF89000A1AB7C /* View */,
-				041C91552C8EF68B00A1AB7C /* ContentView.swift */,
 				041C91572C8EF68D00A1AB7C /* Assets.xcassets */,
 				041C91592C8EF68D00A1AB7C /* Preview Content */,
 			);
@@ -84,6 +86,7 @@
 				041C91612C8EF75D00A1AB7C /* CoinTabView.swift */,
 				041C91642C8EF8A200A1AB7C /* CoinTrendingView.swift */,
 				041C91662C8EF8AC00A1AB7C /* CoinSearchView.swift */,
+				041C91732C8F0E3A00A1AB7C /* CoinSearchRowView.swift */,
 				041C91682C8EF8BC00A1AB7C /* CoinFavoriteView.swift */,
 			);
 			path = View;
@@ -166,9 +169,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				041C91652C8EF8A200A1AB7C /* CoinTrendingView.swift in Sources */,
+				041C91722C8F026E00A1AB7C /* NavigationWrapper.swift in Sources */,
 				041C91692C8EF8BC00A1AB7C /* CoinFavoriteView.swift in Sources */,
-				041C91562C8EF68B00A1AB7C /* ContentView.swift in Sources */,
 				041C91672C8EF8AC00A1AB7C /* CoinSearchView.swift in Sources */,
+				041C91742C8F0E3A00A1AB7C /* CoinSearchRowView.swift in Sources */,
 				041C91622C8EF75D00A1AB7C /* CoinTabView.swift in Sources */,
 				041C91542C8EF68B00A1AB7C /* MiniCoinProjectApp.swift in Sources */,
 			);
