@@ -11,7 +11,7 @@ import SwiftUI
 struct MiniCoinProjectApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CoinTabView()
         }
     }
 }
