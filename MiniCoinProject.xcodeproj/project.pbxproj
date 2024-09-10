@@ -20,6 +20,7 @@
 		041C91792C8F0F0700A1AB7C /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C91782C8F0F0700A1AB7C /* Coin.swift */; };
 		041C917E2C8F0F3400A1AB7C /* CoingeckoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C917D2C8F0F3400A1AB7C /* CoingeckoManager.swift */; };
 		041C91802C8F100A00A1AB7C /* CoingeckoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C917F2C8F100A00A1AB7C /* CoingeckoRouter.swift */; };
+		04EB9FF82C905B11002B1CA2 /* CoinDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EB9FF72C905B11002B1CA2 /* CoinDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		041C91782C8F0F0700A1AB7C /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
 		041C917D2C8F0F3400A1AB7C /* CoingeckoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoingeckoManager.swift; sourceTree = "<group>"; };
 		041C917F2C8F100A00A1AB7C /* CoingeckoRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoingeckoRouter.swift; sourceTree = "<group>"; };
+		04EB9FF72C905B11002B1CA2 /* CoinDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 			children = (
 				041C91662C8EF8AC00A1AB7C /* CoinSearchView.swift */,
 				041C91732C8F0E3A00A1AB7C /* CoinSearchRowView.swift */,
+				04EB9FF72C905B11002B1CA2 /* CoinDetailView.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 			files = (
 				041C917E2C8F0F3400A1AB7C /* CoingeckoManager.swift in Sources */,
 				041C91652C8EF8A200A1AB7C /* CoinTrendingView.swift in Sources */,
+				04EB9FF82C905B11002B1CA2 /* CoinDetailView.swift in Sources */,
 				041C91722C8F026E00A1AB7C /* NavigationWrapper.swift in Sources */,
 				041C91692C8EF8BC00A1AB7C /* CoinFavoriteView.swift in Sources */,
 				041C91672C8EF8AC00A1AB7C /* CoinSearchView.swift in Sources */,

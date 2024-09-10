@@ -39,6 +39,7 @@ enum CoingeckoRouter {
         case .market(let id):
             [
                 "vs_currency": "krw",
+                "sparkline": "true",
                 "ids": "\(id)"
             ]
         }

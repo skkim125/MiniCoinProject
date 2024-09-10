@@ -17,7 +17,11 @@ struct CoinSearchView: View {
         NavigationView {
             ScrollView {
                 ForEach($coins, id: \.id) { $coin in
-                    CoinSearchRowView(coin: $coin, myCoins: $myCoins)
+                    NavigationLink {
+                        NavigationWrapper(CoinDetailView(coin: $coin))
+                    } label: {
+                        CoinSearchRowView(coin: $coin, myCoins: $myCoins)
+                    }
                 }
                 .padding(5)
             }
