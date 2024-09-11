@@ -18,6 +18,44 @@ struct Coin: Decodable, Hashable {
     let thumb: String
 }
 
+struct Trending: Decodable, Hashable {
+    let coins: [ResponseCoinForTrending]
+    let nfts: [NFTForTrending]
+}
+
+struct ResponseCoinForTrending: Decodable, Hashable {
+    let item: CoinForTrending
+}
+
+struct CoinForTrending: Decodable, Hashable {
+    let id: String
+    let name: String
+    let symbol: String
+    let small: String
+    let data: CoinPrice
+}
+
+struct CoinPrice: Decodable, Hashable {
+    let price: Double
+    let price_change_percentage_24h: PricePer24HForTrending
+}
+
+struct PricePer24HForTrending: Decodable, Hashable {
+    let krw: Double
+}
+
+struct NFTForTrending: Decodable, Hashable {
+    let name: String
+    let symbol: String
+    let thumb: String
+    let data: NFTPrice
+}
+
+struct NFTPrice: Decodable, Hashable {
+    let floor_price: String
+    let floor_price_in_usd_24h_percentage_change: String
+}
+
 struct CoinForMarket: Decodable, Hashable {
     let id: String
     let name: String
